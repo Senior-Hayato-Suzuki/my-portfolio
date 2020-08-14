@@ -44,7 +44,7 @@ a {
   .form-control-line:focus {
     border-color: #adadad; }
 
-.page-cover:after {
+/*.page-cover:after {
   content: "";
   background: -webkit-gradient(linear, right top, left top, from(#D1335B), to(#00152e));
   background: linear-gradient(to left, #D1335B, #00152e);
@@ -53,4 +53,4 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  opacity: 0.7; }
+  opacity: 0.7; }*/
