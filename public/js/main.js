@@ -5,6 +5,17 @@
 // $(document).foundation();
 
 // Init all plugin when document is ready 
+// var gqTl = new TimelineMax({ paused: true });
+// gqTl.staggerFromTo(
+//   ".fingerprint path",
+//   1,
+//   { autoAlpha: 0 },
+//   { autoAlpha: 1 },
+//   0.1
+// );
+
+// Hover events
+
 $(document).on('ready', function () {
 	// 0. Init console to avoid error
 	var method;
@@ -279,8 +290,11 @@ $(document).on('ready', function () {
 
 	// 9. Page Loader : hide loader when all are loaded
 	contextWindow.on('load', function () {
-		$('#loader-wrapper').addClass('p-hidden');
-		$('.section').addClass('anim');
+		setTimeout(function(){
+			$('#loader-wrapper').addClass('p-hidden');
+			$('.section').addClass('anim');
+		}, 1000);
+		
 	});
 
 });

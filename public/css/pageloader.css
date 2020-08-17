@@ -33,31 +33,31 @@
 }
 
 #loader:before{
-  content:"";
+  /*content:"";
   position:absolute;
   top:5px;
   left:5px;
   bottom:5px;
   right:5px;
   border-top: 3px solid #e74c3c;
-  border-radius:50%;
+  border-radius:50%;*/
   
-  -webkit-animation: spin 2.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 2.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  /*-webkit-animation: spin 2.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          /*animation: spin 2.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 #loader:after{
-  content:"";
+  /*content:"";
   position:absolute;
   top:15px;
   left:15px;
   bottom:15px;
   right:15px;
   border-top: 3px solid #f9c922;
-  border-radius:50%;
+  border-radius:50%;*/
   
-  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  /*-webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  /*        animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 #loader-wrapper img {
@@ -71,6 +71,26 @@
   margin-top: -40px;
   border-radius:50%;
   opacity: 0.5;
+}
+#loader-wrapper h2{
+  display: block;
+  position: absolute;
+  left:50%;
+  top:50%;
+  font-size: 24px;
+  color: white !important;
+  margin-left: -40px;
+  margin-top: 60px;
+}
+.fingerprint {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
 }
 
 @-webkit-keyframes spin {

@@ -5046,6 +5046,7 @@ textarea {
 
 .section-title {
   margin: 0 auto;
+  position: relative;
 }
 
 .section-title.title-large {
