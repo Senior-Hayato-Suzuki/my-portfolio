@@ -18,6 +18,7 @@
 
 $(document).on('ready', function () {
 	// 0. Init console to avoid error
+
 	var method;
 	var noop = function () { };
 	var methods = [
@@ -30,6 +31,7 @@ $(document).on('ready', function () {
 	var console = (window.console = window.console || {});
 	var contextWindow = $(window);
 	var $root = $('html, body');
+	
 	while (length--) {
 		method = methods[length];
 		// Only stub undefined methods.
@@ -40,6 +42,7 @@ $(document).on('ready', function () {
 
 	// 1. Background image as data attribut 
 	var list = $('.bg-img');
+	
 	for (var i = 0; i < list.length; i++) {
 		var src = list[i].getAttribute('data-image-src');
 		list[i].style.backgroundImage = "url('" + src + "')";
@@ -128,6 +131,7 @@ $(document).on('ready', function () {
 		var src = imageList[i].getAttribute('data-src');
 		imageSlides.push({ src: src });
 	}
+	
 	$('.slide-show').vegas({
 		delay: 5000,
 		shuffle: true,

@@ -1,4 +1,3 @@
-
     // Utilities
 var Vector3 = {};
 var Matrix44 = {};
